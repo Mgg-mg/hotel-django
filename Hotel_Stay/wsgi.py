@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Hotel_Stay.Hotel_Stay.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Hotel_Stay.settings')
 
 application = get_wsgi_application()

@@ -1,1 +1,1 @@
-	web: gunicorn Hotel_Stay.wsgi
+gunicorn Hotel_Stay.Hotel_Stay.wsgi

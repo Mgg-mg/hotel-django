@@ -1,0 +1,179 @@
+{% load static %} 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Guajira Stay - Publicación</title>
+    <meta name="description" content="Guajira Stay: experiencias únicas en La Guajira">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontAwesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/light-box.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}">
+
+    <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <script src="{% static 'js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">
+        <a href="{% url 'index' %}">Guajira<em> Stay</em></a>
+    </div>
+    <div class="menu-icon">
+        <span></span>
+    </div>
+</nav>
+
+<div id="video-container"> 
+    <div class="video-overlay"></div>
+    <div class="video-content">
+        <div class="inner">
+            <h1>Conexión Guajira</h1>
+            <div class="scroll-icon">
+                <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="{% static 'img/scroll-icon.png' %}" alt=""></a>
+            </div>    
+        </div>
+    </div>
+    <video autoplay loop muted>
+        <source src="{% static '206272_small.mp4' %}" type="video/mp4" />
+    </video>
+</div>
+
+<div class="blog-entries">
+    <div class="container">
+        <div class="col-md-9">
+            <div class="blog-posts">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="single-blog-post">
+                            <img src="{% static 'img/Inf.jpg' %}" alt="">
+                            <div class="text-content">
+                                <h2>Descubre lo mejor de La Guajira</h2>
+                                <span><a href="#">Guajira Stay</a> / <a href="#">31 Mayo 2025</a> / <a href="#">Turismo</a></span>
+                                <p>Explora las maravillas del norte de Colombia con Guajira Stay. Conecta con la cultura Wayuu, disfruta paisajes desérticos y conoce playas vírgenes como Cabo de la Vela y Punta Gallinas.
+                                <br><br>Nuestros alojamientos están diseñados para brindarte confort, cultura y sostenibilidad en tu visita a La Guajira. 
+                                <br><br>¡Acompáñanos en esta aventura inolvidable! <a href="{% url 'blog' %}">Volver al Blog</a></p>
+                                <div class="tags-share">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul class="tags">
+                                                <li>Tags:</li>
+                                                <li><a href="#">Guajira</a>,</li>
+                                                <li><a href="#">turismo</a>,</li>
+                                                <li><a href="#">wayuu</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="share">
+                                                <li>Compartir:</li>
+                                                <li><a href="#">facebook</a>,</li>
+                                                <li><a href="#">twitter</a>,</li>
+                                                <li><a href="#">instagram</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar no se modifica para mantener funcionalidad -->
+
+        <div class="col-md-3">
+            <div class="side-bar">
+                <!-- Aquí se mantienen las secciones de búsqueda, archivos, categorías, etc. -->
+                <!-- Puedes personalizarlas si quieres reflejar mejor la temática de Guajira Stay -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container-fluid">
+        <div class="col-md-12">
+            <p>&copy; 2025 Guajira Stay. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Botón de contacto -->
+<div class="popup-icon">
+    <button id="modBtn" class="modal-btn"><img src="{% static 'img/contact-icon.png' %}" alt=""></button>
+</div>
+
+<!-- Modal de contacto -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="header-title">Contáctanos en <em>Guajira Stay</em></h3>
+            <div class="close-btn"><img src="{% static 'img/close_contact.png' %}" alt=""></div>    
+        </div>
+        <div class="modal-body">
+            <div class="col-md-6 col-md-offset-3">
+                <form id="contact" action="" method="post">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-md-12">
+                            <fieldset>
+                                <input name="name" type="text" class="form-control" placeholder="Tu nombre..." required="">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                            <fieldset>
+                                <input name="email" type="email" class="form-control" placeholder="Tu correo..." required="">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                            <fieldset>
+                                <textarea name="message" rows="6" class="form-control" placeholder="Tu mensaje..." required=""></textarea>
+                            </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                            <fieldset>
+                                <button type="submit" class="btn">Enviar mensaje</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Menú lateral -->
+<section class="overlay-menu">
+    <div class="container">
+        <div class="row">
+            <div class="main-menu">
+                <ul>
+                    <li><a href="{% url 'index' %}">Inicio</a></li>
+                    <li><a href="{% url 'grid' %}">Alojamientos</a></li>
+                    <li><a href="{% url 'about' %}">Nosotros</a></li>
+                    <li><a href="{% url 'blog' %}">Blog</a></li>
+                    <li><a href="{% url 'single_post' %}">Publicación</a></li>
+                </ul>
+                <p>Vive La Guajira con Guajira Stay</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{% static "js/vendor/jquery-1.11.2.min.js" %}"><\/script>')</script>
+
+<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/plugins.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

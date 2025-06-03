@@ -1,0 +1,264 @@
+{% load static %}
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GUAJIRA STAY</title>
+<!-- 
+Highway Template
+https://templatemo.com/tm-520-highway
+-->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontAwesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/light-box.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}">
+
+    <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <script src="{% static 'js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="{% url 'index' %}">GUAJIRA<em>STAY</em></a>
+        </div>
+      <div class="menu-icon">
+        <span></span>
+      </div>
+    </nav>
+
+    <div id="video-container">
+        <div class="video-overlay"></div>
+        <div class="video-content">
+            <div class="inner">
+            <h1>LOS MEJORES HOTELES</h1>
+            <p>Mejores hoteles en Riohacha - Hoteles frente al mar - Hoteles económicos y hostales recomendados</p>
+                <div class="scroll-icon">
+                    <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="{% static 'img/scroll-icon.png' %}" alt=""></a>
+                </div>    
+            </div>
+        </div>
+        <video autoplay loop muted>
+            <source src="{% static '206272_small.mp4' %}" type="video/mp4" />
+        </video>
+    </div>
+
+    <div class="grid-portfolio" id="portfolio">
+        <div class="container">
+            <div class="row">
+
+                <!-- Aquí se puede usar un loop Django si quieres cargar dinámicamente -->
+                <div class="col-md-4 col-sm-6">
+    <div class="portfolio-item">
+        <a href="https://hoteltaroa.com/" target="_blank">
+            <div class="thumb">
+                <div class="hover-effect">
+                    <div class="hover-content">
+                        <h1>Hotel Taroa</h1>
+                        <p>Ver ubicación</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="{% static 'img/Hotel-5.jpg' %}" alt="Hotel Taroa">
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+    <div class="portfolio-item">
+        <a href="https://www.centraldereservas.com/hoteles/colombia/la-guajira/riohacha/hotel-diamonds" target="_blank">
+            <div class="thumb">
+                <div class="hover-effect">
+                    <div class="hover-content">
+                        <h1>Hotel Diamonds</h1>
+                        <p>Ver ubicación</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="{% static 'img/Hotel-4.jpg' %}" alt="Hotel Diamonds">
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+    <div class="portfolio-item">
+        <a href="https://hotelarimaca.com.co/" target="_blank">
+            <div class="thumb">
+                <div class="hover-effect">
+                    <div class="hover-content">
+                        <h1>Hotel Arimaca</h1>
+                        <p>Ver ubicación</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="{% static 'img/Hotel-6.jpg' %}" alt="Hotel Arimaca">
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+    <div class="portfolio-item">
+        <a href="https://hotel-la-vieja-sara-riohacha.genesishotel.co/" target="_blank">
+            <div class="thumb">
+                <div class="hover-effect">
+                    <div class="hover-content">
+                        <h1>Hotel Galería La Vieja Sara</h1>
+                        <p>Ver ubicación</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="{% static 'img/Hotel-3.jpg' %}" alt="Hotel Galería La Vieja Sara">
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+    <div class="portfolio-item">
+        <a href="https://www.sanbernardohotel.com/" target="_blank">
+            <div class="thumb">
+                <div class="hover-effect">
+                    <div class="hover-content">
+                        <h1>San Bernardo Hotel</h1>
+                        <p>Ver ubicación</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="{% static 'img/Hotel-1.jpg' %}" alt="San Bernardo Hotel">
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+    <div class="portfolio-item">
+        <a href="https://www.walenahotel.com/" target="_blank">
+            <div class="thumb">
+                <div class="hover-effect">
+                    <div class="hover-content">
+                        <h1>Walena Hotel</h1>
+                        <p>Ver ubicación</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="{% static 'img/Hotel-2.jpg' %}" alt="Walena Hotel">
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="col-md-4 col-sm-6">
+    <div class="portfolio-item">
+        <a href="https://es.bonavidahostel.com/" target="_blank">
+            <div class="thumb">
+                <div class="hover-effect">
+                    <div class="hover-content">
+                        <h1>Bona Vida Hostel la Quinta</h1>
+                        <p>Ver ubicación</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="{% static 'img/Hotel-7.jpg' %}" alt="Bona Vida Hostel la Quinta">
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+  
+    
+
+    <!-- Modal button -->
+    <div class="popup-icon">
+      <button id="modBtn" class="modal-btn"><img src="{% static 'img/contact-icon.png' %}" alt=""></button>
+    </div>  
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <!-- Modal Content -->
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h3 class="header-title">HOLA <em>GUAJIRA STAY</em></h3>
+          <div class="close-btn"><img src="{% static 'img/close_contact.png' %}" alt=""></div>    
+        </div>
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <div class="col-md-6 col-md-offset-3">
+            <form id="contact" action="" method="post">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="btn">Send Message Now</button>
+                      </fieldset>
+                    </div>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="overlay-menu">
+      <div class="container">
+        <div class="row">
+          <div class="main-menu">
+              <ul>
+                  <li><a href="{% url 'index' %}">Inicio</a></li>
+                  <li><a href="{% url 'grid' %}">Alojamientos</a></li>
+                  <li><a href="{% url 'about' %}">Nosotros</a></li>
+                  <li><a href="{% url 'blog' %}">Blog</a></li>
+                  <li><a href="{% url 'single_post' %}">Publicación</a></li>
+              </ul>
+              <p>2025 Guajira Stay | Diseñado con ❤️ para La Guajira</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{% static "js/vendor/jquery-1.11.2.min.js" %}"><\/script>')</script>
+
+    <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>  
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

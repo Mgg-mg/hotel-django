@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Información de Guajira Stay</title>
+
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/fontAwesome.css' %}">
+        <link rel="stylesheet" href="{% static 'css/light-box.css' %}">
+        <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}">
+
+        <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+        <script src="{% static 'js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
+    </head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="{% url 'index' %}">Guajira Stay</a>
+        </div>
+        <div class="menu-icon">
+            <span></span>
+        </div>
+    </nav>
+
+    <div id="video-container"> 
+        <div class="video-overlay"></div>
+        <div class="video-content">
+            <div class="inner">
+                <h1>Sobre Nosotros</h1>
+                <div class="scroll-icon">
+                    <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="{% static 'img/scroll-icon.png' %}" alt=""></a>
+                </div>    
+            </div>
+        </div>
+        <video autoplay loop muted>
+            <source src="{% static '206272_small.mp4' %}" type="video/mp4" />
+        </video>
+    </div>
+
+    <div class="services"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="{% static 'img/service_1.png' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h4>¿Quiénes somos?</h4>
+                            <p>
+                                <strong>Guajira Stay</strong> es una plataforma dedicada a recomendar los mejores hoteles, hostales y alojamientos en Riohacha y sus alrededores, dentro del hermoso departamento de La Guajira.
+                            </p>
+                            <p>
+                                Nuestro objetivo es ayudarte a descubrir opciones de hospedaje que se adapten a tu presupuesto, estilo de viaje y necesidades, ya sea que busques comodidad, cercanía a la playa o una experiencia local auténtica.
+                            </p>
+                            <p>
+                                Desde hoteles de lujo con vista al mar hasta hostales acogedores para mochileros, cada recomendación ha sido seleccionada cuidadosamente con base en la ubicación, calidad de servicio y opiniones reales de viajeros.
+                            </p>
+                            <p>
+                                🌞 Queremos que tu paso por La Guajira sea inolvidable, empezando por una excelente estadía. Por eso, en <strong>Guajira Stay</strong> trabajamos para ofrecerte información confiable, actualizada y útil.
+                            </p>
+                            
+
+                            <hr>
+                            <div class="service-item">
+                        <div class="icon">
+                            <img src="{% static 'img/service_6.png' %}" alt="">
+                        </div>
+
+                        
+<p>
+    En <strong>Guajira Stay</strong> te facilitamos el proceso de encontrar y reservar tu hospedaje ideal en Riohacha y sus alrededores. No solo seleccionamos los mejores alojamientos según calidad, ubicación y opiniones de viajeros, sino que también te dirigimos directamente a la página oficial de cada hotel.
+</p>
+<p>
+    🖱️ Solo haz clic en el <strong>nombre</strong> o <strong>imagen</strong> del hotel que te interese, y accederás a toda su información, tarifas y métodos de reserva de forma rápida y segura.
+</p>
+
+<p><strong>Explora, elige y reserva con un solo clic. ¡Descubre Riohacha con Guajira Stay!</strong></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="overlay-menu">
+        <div class="container">
+            <div class="row">
+                <div class="main-menu">
+                    <ul>
+                        <li><a href="{% url 'index' %}">Inicio</a></li>
+                        <li><a href="{% url 'grid' %}">Alojamientos</a></li>
+                        <li><a href="{% url 'about' %}">Nosotros</a></li>
+                        <li><a href="{% url 'blog' %}">Blog</a></li>
+                        <li><a href="{% url 'single_post' %}">Publicaciones</a></li>
+                    </ul>
+                    <p>2025 Guajira Stay | Diseñado con ❤️ para La Guajira</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{% static "js/vendor/jquery-1.11.2.min.js" %}"><\/script>')</script>
+
+    <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

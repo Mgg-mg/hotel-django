@@ -1,0 +1,146 @@
+{% load static %} 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GUAJIRA STAY</title>
+
+    <meta name="description" content="Explora la belleza cultural y natural de La Guajira con Guajira Stay.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontAwesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/light-box.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}">
+
+    <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <script src="{% static 'js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">
+        <a href="{% url 'index' %}">Guajira Stay</a>
+    </div>
+    <div class="menu-icon">
+        <span></span>
+    </div>
+</nav>
+
+<div id="video-container"> 
+    <div class="video-overlay"></div>
+    <div class="video-content">
+        <div class="inner">
+            <h1>Noticias y Cultura</h1>
+            <div class="scroll-icon">
+                <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="{% static 'img/scroll-icon.png' %}" alt=""></a>
+            </div>    
+        </div>
+    </div>
+    <video autoplay loop muted>
+        <source src="{% static '206272_small.mp4' %}" type="video/mp4" />
+    </video>
+</div>
+
+
+<div class="blog-entries">
+    <div class="container">
+        <div class="col-md-9">
+            <div class="blog-posts">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="blog-post">
+                            <img src="{% static 'img/Cabo.jpg' %}" alt="">
+                            <div class="text-content">
+                                <span><a href="#">Equipo Guajira Stay</a> / <a href="#">10 Mayo 2025</a> / <a href="#">Turismo</a></span>
+                                <h2>Descubre Cabo de la Vela: Un paraíso Wayuu</h2>
+                                <p>El Cabo de la Vela es uno de los destinos turísticos más emblemáticos de La Guajira. Este lugar sagrado para los Wayuu ofrece playas vírgenes, aguas tranquilas y atardeceres inigualables. Es ideal para el ecoturismo y el contacto con la cultura indígena.</p>
+                                <div class="simple-btn">
+                                    <a href="{% url 'single_post' %}">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="blog-post">
+                            <img src="{% static 'img/Tejido.jpg' %}" alt="">
+                            <div class="text-content">
+                                <span><a href="#">Equipo Guajira Stay</a> / <a href="#">27 Abril 2025</a> / <a href="#">Cultura</a></span>
+                                <h2>Tejidos Wayuu: Arte que cuenta historias</h2>
+                                <p>Las mochilas Wayuu no son solo accesorios, sino relatos tejidos a mano por mujeres artesanas. Cada diseño representa símbolos ancestrales y visiones del mundo Wayuu. Conoce su proceso de elaboración y el impacto económico que tiene en sus comunidades.</p>
+                                <div class="simple-btn">
+                                    <a href="{% url 'single_post' %}">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                    <div class="col-md-12">
+                        <ul class="page-number">
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="{% url 'blog_page_2' %}">2</a></li>
+                            <li><a href="#">></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="side-bar">
+                <div class="search">
+                    <fieldset>
+                        <input name="search" type="text" class="form-control" id="search" placeholder="Buscar..." required="">
+                    </fieldset>
+                </div>
+
+                
+
+                <div class="categories">
+                    <div class="sidebar-heding">
+                        <h2>Categorías</h2>
+                    </div>
+                    <ul>
+                        <li><a href="#">> Turismo</a></li>
+                        <li><a href="#">> Cultura</a></li>
+                        <li><a href="#">> Comunidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="tags">
+                    <div class="sidebar-heding">
+                        <h2>Etiquetas</h2>
+                    </div>
+                    <ul>
+                        <li><a href="#">Wayuu</a></li>
+                        <li><a href="#">Guajira</a></li>
+                        <li><a href="#">Turismo</a></li>
+                        <li><a href="#">Artesanías</a></li>
+                        <li><a href="#">Cultura</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Guajira Stay | Diseñado con ❤️ para La Guajira</p>
+    </div>
+</footer>
+
+<script src="{% static 'js/vendor/jquery-1.11.2.min.js' %}"></script>
+<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/plugins.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
